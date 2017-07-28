@@ -1,0 +1,30 @@
+
+ROM used: 352 (17%)
+          352 (17%) including unused fragments
+
+          1 Average locations per line
+          13 Average locations per statement
+
+RAM used: 90 (51%) at main() level
+          94 (54%) worst case
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   56    27 100  C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\verici.c
+  198     0   0  C:\Program Files\PICC\devices\16F628.h
+----- -----
+  508    54 Total
+
+Page ROM  %  RAM  Functions:
+---- --- --- ---  ----------
+0     21   6   1  @delay_ms1
+0    230  65  85  main
+0     21   6   3  @DIV88
+0     56  16   2  @PRINTF_U_9600_50_49
+0     20   6   0  @const10054
+
+ Segment   Used  Free
+---------  ----  ----
+00000-00003     4  0  
+00004-007FF   348  1696  
+

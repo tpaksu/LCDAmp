@@ -1,0 +1,87 @@
+004-005 @READ_PROGRAM_MEMORY.P1
+00B     INTCON
+00C     PIR1
+00C.4   TXIF
+00C.5   RCIF
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+018     RCSTA
+01F.6   C1OUT
+01F.7   C2OUT
+020     rs232_errors
+021     lcd_line
+022     MAIN.input
+023     lcd_init.i
+023     MAIN.@SCRATCH
+024     lcd_putc.c
+024     lcd_init.@SCRATCH
+025     @delay_ms1.P1
+025     lcd_gotoxy.x
+026     lcd_gotoxy.y
+027     lcd_gotoxy.address
+028     lcd_gotoxy.@SCRATCH
+029     lcd_send_byte.address
+02A     lcd_send_byte.n
+02B     lcd_send_byte.@SCRATCH
+02C     lcd_send_nibble.nibble
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+08C     PIE1
+08C.4   TXIE
+08C.5   RCIE
+098     TXSTA
+099     SPBRG
+10D     @READ_PROGRAM_MEMORY.P1
+10F     @READ_PROGRAM_MEMORY.P1
+
+00B0  @delay_ms1
+0192  @GETCH_BIU_1
+0004  @const51
+00C5  lcd_send_nibble
+00EE  lcd_send_byte
+0115  lcd_init
+0144  lcd_gotoxy
+016A  lcd_putc
+019D  MAIN
+000C  @const79
+0012  @const80
+002C  @const81
+0046  @const82
+0060  @const83
+007A  @const84
+0083  @const85
+008C  @const86
+0095  @const87
+009E  @const88
+00A7  @const89
+019D  @cinit
+
+Project Files:
+    deneme.c
+    deneme.h
+    ..\..\..\..\..\Program Files\PICC\devices\16F628.h
+    flexLCD.C
+
+Units:
+    C:\Documents and Settings\ulvi\Desktop\taha\piccproje\deneme.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F628
+    Pointer Size:   16
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Documents and Settings\ulvi\Desktop\taha\piccproje\deneme.err
+    Ext Symbols: C:\Documents and Settings\ulvi\Desktop\taha\piccproje\deneme.esym
+    INHX8:       C:\Documents and Settings\ulvi\Desktop\taha\piccproje\deneme.hex
+    Symbols:     C:\Documents and Settings\ulvi\Desktop\taha\piccproje\deneme.sym
+    List:        C:\Documents and Settings\ulvi\Desktop\taha\piccproje\deneme.lst
+    Debug/COFF:  C:\Documents and Settings\ulvi\Desktop\taha\piccproje\deneme.cof
+    Call Tree:   deneme.tre
+    Statistics:  deneme.sta

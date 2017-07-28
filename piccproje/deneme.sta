@@ -1,0 +1,47 @@
+
+ROM used: 799 (39%)
+          799 (39%) including unused fragments
+
+          1 Average locations per line
+          6 Average locations per statement
+
+RAM used: 10 (6%) at main() level
+          19 (11%) worst case
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  139    88  62  C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.c
+   14     0   0  C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.h
+  198     0   0  C:\Program Files\PICC\devices\16F628.h
+  297    54  23  C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\flexLCD.C
+----- -----
+ 1296   284 Total
+
+Page ROM  %  RAM  Functions:
+---- --- --- ---  ----------
+0     21   3   1  @delay_ms1
+0     12   2   0  @GETCH_BIU_1
+0      8   1   0  @const40
+0     42   5   1  lcd_send_nibble
+0     40   5   3  lcd_send_byte
+0     47   6   2  lcd_init
+0     38   5   4  lcd_gotoxy
+0     40   5   1  lcd_putc
+0    383  48   3  main
+0      6   1   0  @const10093
+0     26   3   0  @const10108
+0     26   3   0  @const10113
+0     26   3   0  @const10118
+0     26   3   0  @const10123
+0      9   1   0  @const10152
+0      9   1   0  @const10174
+0      9   1   0  @const10196
+0      9   1   0  @const10218
+0      9   1   0  @const10240
+0      9   1   0  @const10262
+
+ Segment   Used  Free
+---------  ----  ----
+00000-00003     4  0  
+00004-007FF   795  1249  
+

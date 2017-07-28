@@ -1,0 +1,43 @@
+[PROJECT]
+Target=deneme.HEX
+Development_Mode=
+Processor=0x6628
+ToolSuite=CCS
+Processor_Text=PIC16F628
+
+[Directories]
+Include=C:\Program Files\PICC\devices\;C:\Program Files\PICC\dr
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=C:\Documents and Settings\ulvi\Desktop\taha\piccproje\deneme.c
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+
+[deneme.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=deneme.c
+
+[Windows]
+0=0000 deneme.c 0 0 796 451 3 0
+
+[Opened Files]
+1=C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\piccproje\deneme.c
+2=
+3=C:\Program Files\PICC\devices\16F628.h
+4=C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\flexLCD.C
+5=
+[Units]
+Count=1
+1=deneme.c (main)
+Link=0

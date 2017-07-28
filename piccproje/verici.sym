@@ -1,0 +1,54 @@
+00C     PIR1
+00C.4   TXIF
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+021-070 main.aray
+071     main.i
+072     main.saniye
+073     main.dakika
+074     main.basili
+075     @PRINTF_U_9600_50_49.P1
+075     main.@SCRATCH
+076     @PRINTF_U_9600_50_49.P1
+076     @delay_ms1.P2
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+07C     @DIV88.P1
+07D     @DIV88.P1
+07E     @DIV88.@SCRATCH
+
+0065  @delay_ms1
+007A  main
+0018  @DIV88
+002D  @PRINTF_U_9600_50_49
+0004  @const10054
+007A  @cinit
+
+Project Files:
+    C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\verici.c
+    C:\Program Files\PICC\devices\16F628.h
+
+Units:
+    C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\verici.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F628
+    Pointer Size:   8
+    Opt Level:      9
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\verici.err
+    INHX8:       C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\verici.hex
+    Symbols:     C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\verici.sym
+    List:        C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\verici.lst
+    Debug/COFF:  C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\verici.cof
+    Call Tree:   C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\verici.tre
+    Statistics:  C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\verici.sta

@@ -1,0 +1,86 @@
+
+ROM used: 805 (39%)
+          805 (39%) including unused fragments
+
+          1 Average locations per line
+          6 Average locations per statement
+
+RAM used: 10 (4%) at main() level
+          19 (8%) worst case
+
+Stack used: 4 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  137    86  61  deneme.c
+   14     0   0  deneme.h
+  198     0   0  ..\..\..\..\..\Program Files\PICC\devices\16F628.h
+  297    54  39  flexLCD.C
+----- -----
+  646   140 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     21   3   1             @delay_ms1
+0     11   1   0             @GETCH_BIU_1
+0      8   1   0             @const51
+0     41   5   1   326  2.8  lcd_send_nibble
+0     39   5   3   235  3.8  lcd_send_byte
+0     47   6   2   406  4.7  lcd_init
+0     38   5   4   386  6.5  lcd_gotoxy
+0     40   5   1   308  5.0  lcd_putc
+0    392  49   2  2265  8.3  MAIN
+0      6   1   0             @const79
+0     26   3   0             @const80
+0     26   3   0             @const81
+0     26   3   0             @const82
+0     26   3   0             @const83
+0      9   1   0             @const84
+0      9   1   0             @const85
+0      9   1   0             @const86
+0      9   1   0             @const87
+0      9   1   0             @const88
+0      9   1   0             @const89
+
+Program metrics:
+    Functions               6
+    Statements              140
+    Comments                133
+    Volume (V)              5354
+    Difficilty (D)          29.6
+    Effort to implement (E) 158259
+    Time to implement (T)   2 hours, 27 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   37
+    Maintainability (MI)    126
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF   801  1243  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms1
+     0     1     0     0     0    @GETCH_BIU_1
+     0     1     0     0     0    @const51
+     6    28    38    26     0    lcd_send_nibble
+     8    24    24    23     1    lcd_send_byte
+    10    35    41    33     2    lcd_init
+    13    28    44    28     5    lcd_gotoxy
+    11    24    38    22     4    lcd_putc
+    17   112   214   109    25    MAIN
+     0     1     0     0     0    @const79
+     0     1     0     0     0    @const80
+     0     1     0     0     0    @const81
+     0     1     0     0     0    @const82
+     0     1     0     0     0    @const83
+     0     1     0     0     0    @const84
+     0     1     0     0     0    @const85
+     0     1     0     0     0    @const86
+     0     1     0     0     0    @const87
+     0     1     0     0     0    @const88
+     0     1     0     0     0    @const89

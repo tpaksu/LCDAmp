@@ -1,0 +1,328 @@
+CCS PCM C Compiler, Version 3.245, 28193               19-Oca-07 18:26
+
+               Filename: C:\Documents and Settings\Trevor LeMorte\Desktop\piccproje\verici.lst
+
+               ROM used: 352 words (17%)
+                         Largest free fragment is 1696
+               RAM used: 90 (51%) at main() level
+                         94 (54%) worst case
+               Stack:    2 locations
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   07A
+0003:  NOP
+.................... #include <16F628.h> 
+.................... //////// Standard Header file for the PIC16F628 device //////////////// 
+.................... #device PIC16F628 
+.................... #list 
+....................  
+.................... #fuses intrc_io,nomclr,NOPROTECT,NOWDT,NOBROWNOUT,NOLVP /*fuses, turn pretty much everything off!*/ 
+.................... #use delay(clock=4000000) 
+0065:  MOVLW  76
+0066:  MOVWF  04
+0067:  MOVF   00,W
+0068:  BTFSC  03.2
+0069:  GOTO   079
+006A:  MOVLW  01
+006B:  MOVWF  78
+006C:  CLRF   77
+006D:  DECFSZ 77,F
+006E:  GOTO   06D
+006F:  DECFSZ 78,F
+0070:  GOTO   06C
+0071:  MOVLW  4A
+0072:  MOVWF  77
+0073:  DECFSZ 77,F
+0074:  GOTO   073
+0075:  NOP
+0076:  NOP
+0077:  DECFSZ 00,F
+0078:  GOTO   06A
+0079:  GOTO   13E (RETURN)
+.................... #use rs232(baud=9600,parity=N,xmit=pin_B2,rcv=PIN_B1,bits=8,stream=seri) 
+....................  
+.................... #byte PIR1 =  0x0C 
+.................... #bit TXIF = PIR1.4 
+....................  
+.................... void main() 
+.................... { 
+007A:  CLRF   04
+007B:  MOVLW  1F
+007C:  ANDWF  03,F
+007D:  MOVLW  19
+007E:  BSF    03.5
+007F:  MOVWF  19
+0080:  MOVLW  26
+0081:  MOVWF  18
+0082:  MOVLW  90
+0083:  BCF    03.5
+0084:  MOVWF  18
+0085:  MOVLW  07
+0086:  MOVWF  1F
+.................... unsigned char aray[80] = {0x00,0xA1,'A','l','a','n','i','s',' ','M','o','r','i','s','e','t','t','e',' ',' ',' ',' ',0xA2,'I','r','o','n','i','c',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',0xA3,0xA4,'M','e','m',':','5','4','%',' ',' ',' ',' ',' ',' ','C','P','U',':','2','5','%',0xA5}; 
+0087:  CLRF   21
+0088:  MOVLW  A1
+0089:  MOVWF  22
+008A:  MOVLW  41
+008B:  MOVWF  23
+008C:  MOVLW  6C
+008D:  MOVWF  24
+008E:  MOVLW  61
+008F:  MOVWF  25
+0090:  MOVLW  6E
+0091:  MOVWF  26
+0092:  MOVLW  69
+0093:  MOVWF  27
+0094:  MOVLW  73
+0095:  MOVWF  28
+0096:  MOVLW  20
+0097:  MOVWF  29
+0098:  MOVLW  4D
+0099:  MOVWF  2A
+009A:  MOVLW  6F
+009B:  MOVWF  2B
+009C:  MOVLW  72
+009D:  MOVWF  2C
+009E:  MOVLW  69
+009F:  MOVWF  2D
+00A0:  MOVLW  73
+00A1:  MOVWF  2E
+00A2:  MOVLW  65
+00A3:  MOVWF  2F
+00A4:  MOVLW  74
+00A5:  MOVWF  30
+00A6:  MOVWF  31
+00A7:  MOVLW  65
+00A8:  MOVWF  32
+00A9:  MOVLW  20
+00AA:  MOVWF  33
+00AB:  MOVWF  34
+00AC:  MOVWF  35
+00AD:  MOVWF  36
+00AE:  MOVLW  A2
+00AF:  MOVWF  37
+00B0:  MOVLW  49
+00B1:  MOVWF  38
+00B2:  MOVLW  72
+00B3:  MOVWF  39
+00B4:  MOVLW  6F
+00B5:  MOVWF  3A
+00B6:  MOVLW  6E
+00B7:  MOVWF  3B
+00B8:  MOVLW  69
+00B9:  MOVWF  3C
+00BA:  MOVLW  63
+00BB:  MOVWF  3D
+00BC:  MOVLW  20
+00BD:  MOVWF  3E
+00BE:  MOVWF  3F
+00BF:  MOVWF  40
+00C0:  MOVWF  41
+00C1:  MOVWF  42
+00C2:  MOVWF  43
+00C3:  MOVWF  44
+00C4:  MOVWF  45
+00C5:  MOVWF  46
+00C6:  MOVWF  47
+00C7:  MOVWF  48
+00C8:  MOVWF  49
+00C9:  MOVWF  4A
+00CA:  MOVLW  A3
+00CB:  MOVWF  4B
+00CC:  MOVLW  A4
+00CD:  MOVWF  4C
+00CE:  MOVLW  4D
+00CF:  MOVWF  4D
+00D0:  MOVLW  65
+00D1:  MOVWF  4E
+00D2:  MOVLW  6D
+00D3:  MOVWF  4F
+00D4:  MOVLW  3A
+00D5:  MOVWF  50
+00D6:  MOVLW  35
+00D7:  MOVWF  51
+00D8:  MOVLW  34
+00D9:  MOVWF  52
+00DA:  MOVLW  25
+00DB:  MOVWF  53
+00DC:  MOVLW  20
+00DD:  MOVWF  54
+00DE:  MOVWF  55
+00DF:  MOVWF  56
+00E0:  MOVWF  57
+00E1:  MOVWF  58
+00E2:  MOVWF  59
+00E3:  MOVLW  43
+00E4:  MOVWF  5A
+00E5:  MOVLW  50
+00E6:  MOVWF  5B
+00E7:  MOVLW  55
+00E8:  MOVWF  5C
+00E9:  MOVLW  3A
+00EA:  MOVWF  5D
+00EB:  MOVLW  32
+00EC:  MOVWF  5E
+00ED:  MOVLW  35
+00EE:  MOVWF  5F
+00EF:  MOVLW  25
+00F0:  MOVWF  60
+00F1:  MOVLW  A5
+00F2:  MOVWF  61
+00F3:  CLRF   62
+00F4:  CLRF   63
+00F5:  CLRF   64
+00F6:  CLRF   65
+00F7:  CLRF   66
+00F8:  CLRF   67
+00F9:  CLRF   68
+00FA:  CLRF   69
+00FB:  CLRF   6A
+00FC:  CLRF   6B
+00FD:  CLRF   6C
+00FE:  CLRF   6D
+00FF:  CLRF   6E
+0100:  CLRF   6F
+0101:  CLRF   70
+.................... int i,saniye,dakika,basili; 
+.................... saniye=0; 
+0102:  CLRF   72
+.................... dakika=0; 
+0103:  CLRF   73
+....................  
+.................... while(1){ 
+....................  
+....................  
+....................  
+....................  
+.................... 		if (TXIF) 
+0104:  BTFSS  0C.4
+0105:  GOTO   15E
+.................... 		{ 
+.................... 				putc(aray[i]); 
+0106:  MOVLW  21
+0107:  ADDWF  71,W
+0108:  MOVWF  04
+0109:  MOVF   00,W
+010A:  MOVWF  75
+010B:  MOVF   75,W
+010C:  BTFSS  0C.4
+010D:  GOTO   10C
+010E:  MOVWF  19
+....................  
+.................... 				if(aray[i]==0xA3){ 
+010F:  MOVLW  21
+0110:  ADDWF  71,W
+0111:  MOVWF  04
+0112:  MOVF   00,W
+0113:  SUBLW  A3
+0114:  BTFSS  03.2
+0115:  GOTO   12F
+.................... 				printf("%02u:",dakika); 
+0116:  MOVF   73,W
+0117:  MOVWF  75
+0118:  MOVLW  01
+0119:  MOVWF  76
+011A:  CALL   02D
+011B:  MOVLW  3A
+011C:  BTFSS  0C.4
+011D:  GOTO   11C
+011E:  MOVWF  19
+.................... 				printf("%02u",saniye); 
+011F:  MOVF   72,W
+0120:  MOVWF  75
+0121:  MOVLW  01
+0122:  MOVWF  76
+0123:  CALL   02D
+.................... 				printf("/03:51     192k"); 
+0124:  CLRF   75
+0125:  MOVF   75,W
+0126:  CALL   004
+0127:  IORLW  00
+0128:  BTFSC  03.2
+0129:  GOTO   12F
+012A:  INCF   75,F
+012B:  BTFSS  0C.4
+012C:  GOTO   12B
+012D:  MOVWF  19
+012E:  GOTO   125
+.................... 				} 
+....................  
+....................  
+....................  
+.................... 				TXIF=0; 
+012F:  BCF    0C.4
+.................... 				i=i+1; 
+0130:  MOVLW  01
+0131:  ADDWF  71,F
+.................... 				if (aray[i]==0xA5) 
+0132:  MOVLW  21
+0133:  ADDWF  71,W
+0134:  MOVWF  04
+0135:  MOVF   00,W
+0136:  SUBLW  A5
+0137:  BTFSS  03.2
+0138:  GOTO   15E
+.................... 				{	delay_ms(950); 
+0139:  MOVLW  05
+013A:  MOVWF  75
+013B:  MOVLW  BE
+013C:  MOVWF  76
+013D:  GOTO   065
+013E:  DECFSZ 75,F
+013F:  GOTO   13B
+.................... 				saniye=saniye+1; 
+0140:  MOVLW  01
+0141:  ADDWF  72,F
+.................... 				if(saniye==60){ 
+0142:  MOVF   72,W
+0143:  SUBLW  3C
+0144:  BTFSS  03.2
+0145:  GOTO   149
+.................... 				saniye=0; 
+0146:  CLRF   72
+.................... 				dakika=dakika+1; 
+0147:  MOVLW  01
+0148:  ADDWF  73,F
+.................... 				} 
+.................... 				if(dakika==3&saniye==51){ 
+0149:  MOVF   73,W
+014A:  SUBLW  03
+014B:  BTFSC  03.2
+014C:  GOTO   14F
+014D:  MOVLW  00
+014E:  GOTO   150
+014F:  MOVLW  01
+0150:  MOVWF  75
+0151:  MOVF   72,W
+0152:  SUBLW  33
+0153:  BTFSC  03.2
+0154:  GOTO   157
+0155:  MOVLW  00
+0156:  GOTO   158
+0157:  MOVLW  01
+0158:  ANDWF  75,W
+0159:  BTFSC  03.2
+015A:  GOTO   15D
+.................... 				dakika=0; 
+015B:  CLRF   73
+.................... 				saniye=0; 
+015C:  CLRF   72
+....................  
+.................... 				} 
+....................  
+.................... 					i=0; 
+015D:  CLRF   71
+.................... 				} 
+.................... 		} 
+....................  
+....................  
+.................... 		} 
+015E:  GOTO   104
+....................  
+.................... } 
+015F:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F18   NOWDT NOPUT NOPROTECT NOBROWNOUT NOMCLR NOLVP INTRC_IO NOCPD

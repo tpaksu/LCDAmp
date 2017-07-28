@@ -1,0 +1,5 @@
+>>> Warning 214 "deneme.c" Line 46(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 203 "deneme.c" Line 54(1,1): Condition always TRUE
+>>> Warning 202 "C:\Documents and Settings\ulvi\Desktop\taha\piccproje\deneme.h" Line 12(5,8): Variable never used:   rs232_errors
+      Memory usage:   ROM=39%      RAM=4% - 8%
+      0 Errors,  3 Warnings.

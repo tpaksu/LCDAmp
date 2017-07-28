@@ -1,0 +1,84 @@
+00B     INTCON
+00C     PIR1
+00C.4   TXIF
+00C.5   RCIF
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+018     RCSTA
+01F.6   C1OUT
+01F.7   C2OUT
+020     rs232_errors
+021     lcd_line
+022     main.input
+023     main.harf
+024     lcd_init.i
+024     main.@SCRATCH
+025     lcd_putc.c
+025     lcd_init.@SCRATCH
+026     lcd_gotoxy.x
+026     @delay_ms1.P1
+027     lcd_gotoxy.y
+028     lcd_gotoxy.address
+029     lcd_gotoxy.@SCRATCH
+02A     lcd_send_byte.address
+02B     lcd_send_byte.n
+02C     lcd_send_byte.@SCRATCH
+02D     lcd_send_nibble.nibble
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+08C     PIE1
+08C.4   TXIE
+08C.5   RCIE
+098     TXSTA
+099     SPBRG
+
+00B0  @delay_ms1
+0194  @GETCH_BIU_1
+0004  @const40
+00C5  lcd_send_nibble
+00EF  lcd_send_byte
+0117  lcd_init
+0146  lcd_gotoxy
+016C  lcd_putc
+01A0  main
+000C  @const10093
+0012  @const10108
+002C  @const10113
+0046  @const10118
+0060  @const10123
+007A  @const10152
+0083  @const10174
+008C  @const10196
+0095  @const10218
+009E  @const10240
+00A7  @const10262
+01A0  @cinit
+
+Project Files:
+    C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.c
+    C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.h
+    C:\Program Files\PICC\devices\16F628.h
+    C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\flexLCD.C
+
+Units:
+    C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F628
+    Pointer Size:   8
+    Opt Level:      9
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.err
+    INHX8:       C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.hex
+    Symbols:     C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.sym
+    List:        C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.lst
+    Debug/COFF:  C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.cof
+    Call Tree:   C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.tre
+    Statistics:  C:\Documents and Settings\Trevor LeMorte\Desktop\proje ile ilgililer\çalýþan hali\piccproje\deneme.sta

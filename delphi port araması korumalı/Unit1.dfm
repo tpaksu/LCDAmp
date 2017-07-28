@@ -1,0 +1,311 @@
+object Form1: TForm1
+  Left = 252
+  Top = 284
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'PicAmp'
+  ClientHeight = 157
+  ClientWidth = 250
+  Color = clCream
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = OnClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label3: TLabel
+    Left = 40
+    Top = 256
+    Width = 3
+    Height = 13
+    Color = clSkyBlue
+    ParentColor = False
+    Visible = False
+  end
+  object Label4: TLabel
+    Left = 87
+    Top = 236
+    Width = 4
+    Height = 14
+    Color = clWhite
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object Label1: TLabel
+    Left = 40
+    Top = 240
+    Width = 3
+    Height = 13
+    Color = clSkyBlue
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object Label2: TLabel
+    Left = 23
+    Top = 52
+    Width = 4
+    Height = 14
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 23
+    Top = 38
+    Width = 4
+    Height = 14
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 23
+    Top = 24
+    Width = 4
+    Height = 14
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 48
+    Top = 240
+    Width = 3
+    Height = 13
+    Color = clSkyBlue
+    ParentColor = False
+    Visible = False
+    WordWrap = True
+  end
+  object Label8: TLabel
+    Left = 23
+    Top = 66
+    Width = 4
+    Height = 14
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Verdana'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Button5: TButton
+    Left = 12
+    Top = 90
+    Width = 33
+    Height = 25
+    Caption = 'ses-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 4
+    OnClick = Button5Click
+    OnMouseDown = btn5mousedown
+    OnMouseUp = btn5mouseup
+  end
+  object Button7: TButton
+    Left = 44
+    Top = 90
+    Width = 33
+    Height = 25
+    Caption = '7'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Webdings'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 5
+    OnClick = Button7Click
+  end
+  object Button1: TButton
+    Left = 76
+    Top = 90
+    Width = 33
+    Height = 25
+    Caption = '4'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Webdings'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button3: TButton
+    Left = 108
+    Top = 90
+    Width = 33
+    Height = 25
+    Caption = ';'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Webdings'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Button2: TButton
+    Left = 140
+    Top = 90
+    Width = 33
+    Height = 25
+    Caption = '<'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Webdings'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button8: TButton
+    Left = 172
+    Top = 90
+    Width = 33
+    Height = 25
+    Caption = '8'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Webdings'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 6
+    OnClick = Button8Click
+  end
+  object Button4: TButton
+    Left = 204
+    Top = 90
+    Width = 33
+    Height = 25
+    Caption = 'ses+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 3
+    OnClick = Button4Click
+    OnMouseDown = b4mousedown
+    OnMouseUp = b4mouseup
+  end
+  object Edit1: TEdit
+    Left = 64
+    Top = 240
+    Width = 121
+    Height = 21
+    MaxLength = 4
+    TabOrder = 7
+    Text = 'Edit1'
+    Visible = False
+    OnChange = Edit1Change
+  end
+  object ComComboBox1: TComComboBox
+    Left = 16
+    Top = 120
+    Width = 65
+    Height = 21
+    ComPort = ComPort1
+    Style = csDropDownList
+    ItemHeight = 13
+    ItemIndex = -1
+    TabOrder = 8
+    OnChange = comcombochange
+  end
+  object WC1: TWinampControl
+    Left = 200
+    Top = 208
+  end
+  object Timer1: TTimer
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 160
+    Top = 208
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer2Timer
+    Left = 120
+    Top = 208
+  end
+  object Timer3: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer3Timer
+    Left = 80
+    Top = 208
+  end
+  object shifttimer: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = shifttimerTimer
+    Left = 40
+    Top = 208
+  end
+  object ComPort1: TComPort
+    BaudRate = br9600
+    Port = 'COM1'
+    Parity.Bits = prNone
+    StopBits = sbOneStopBit
+    DataBits = dbEight
+    Events = [evRxChar, evTxEmpty, evRxFlag, evRing, evBreak, evCTS, evDSR, evError, evRLSD, evRx80Full]
+    FlowControl.OutCTSFlow = False
+    FlowControl.OutDSRFlow = False
+    FlowControl.ControlDTR = dtrDisable
+    FlowControl.ControlRTS = rtsDisable
+    FlowControl.XonXoffOut = False
+    FlowControl.XonXoffIn = False
+    OnRxChar = rxchar
+    Left = 8
+    Top = 208
+  end
+end
